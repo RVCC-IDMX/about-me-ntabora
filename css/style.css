@@ -1,4 +1,5 @@
 #BOB img{
+
     width: 50px;
     height: 50px;
 }
@@ -36,6 +37,13 @@ body{
     text-align: center;
     box-shadow: 3px 3px 10px 5px #000;
     padding: 20px;
+
+}
+
+#hobbies ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #Gallery{
@@ -45,10 +53,39 @@ body{
 #Gallery img {
     width:640px;
     max-width: 90%;
+    box-shadow: 3px 3px 10px #000;
+}
 
+#Gallery figcaption{
+    padding-bottom: 30px;
+}
+
+
+article p:nth-child(odd):first-letter{
+    background-color: radial-gradient(#0388fc,lightblue);
+    color:gray;
+    border: 1px solid black;
+    font-size: 30pt;
 }
 
 footer{
     text-align: center;
     padding-top: 40px;
+    }
+
+/*Tablet State*/
+@media screen and (min-width: 960px){
+    figure{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    #Gallery figcaption {
+        font-family: Montserrat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        margin-left: 1rem;
+        }
+
     }
