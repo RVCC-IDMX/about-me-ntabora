@@ -1,20 +1,13 @@
+* {
+    border:1px solid;
+}
+
 #BOB img{
 
     width: 50px;
     height: 50px;
 }
 
-header{
-    font-family: 'Montserrat', sans-serif;
-    background-color: #00317a;
-    background-image: linear-gradient(to right, #00317a, #0388fc);
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-#hero img{
-    width: 150px;
-}
 
 body{
     font-family: 'PT Serif', serif;
@@ -22,6 +15,29 @@ body{
     background-image: linear-gradient(to bottom, antiquewhite, beige);
     color: #000;
     text-align: center;
+    
+}
+
+header{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #00317a;
+    background-image: linear-gradient(to right, #00317a, #0388fc);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 40px;
+    grid-area: header;
+}
+
+#hero{
+    text-align: center;
+}
+
+#hero img{
+    width: 150px;
 }
 
 #bio{
@@ -47,7 +63,7 @@ body{
 }
 
 #Gallery{
-    padding: 40px;  
+    padding: 40px; 
 }
 
 #Gallery img {
@@ -74,7 +90,35 @@ footer{
     }
 
 /*Tablet State*/
-@media screen and (min-width: 960px){
+@media screen and (min-width: 960px) { /* and (max-width:1080px){*/
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header  header"
+                             "hero    hobbies"
+                             "bio     bio"
+                             "gallery gallery"
+                             "footer  footer";
+    }
+
+    header{
+        grid-area: header;
+        text-align: left;
+    }
+
+    h2{
+        text-align: left;
+        grid-area: header;
+    }
+
+    #hero{
+        grid-area: hero;
+    }
+
+    #bio{
+        grid-area: bio;
+    }
+
     figure{
         display: grid;
         grid-template-columns: 2fr 1fr;
