@@ -38,7 +38,9 @@
         
 
         <!--Main body of page-->
-        
+
+
+        <br><h2>About Me</h2></br>
                 <!--This is the hero-->
                 <section id="hero">
                 <img src="img/avataaars.png" alt ="Avatar of creator">
@@ -48,13 +50,12 @@
                 </div>
                 </section>
 
-
                 <section id="bio">
                     <h2>Biography</h2>
                     Current freshmen student at Raritan Valley Community College. Lives in Cherryville, NJ. Valet at Flemington BMW.
                 </section>
 
-
+<!--Hobbies-->
             </section>
                 <!--Our Bio: (not too) Personal info-->
                 <div id = "hobbies">
@@ -131,6 +132,62 @@
                     </div>
                 </p>
             </article>
+
+            <!--Contact Form-->
+            <section id=" contact">
+                <h2>Contact Me</h2> <!--header-->
+                <form name="contactMe" method="post" data-netlify="true"></form>
+                <form id="contactForm" name="contactForm">
+                    <fieldset>
+                        <legend>Contact Form</legend>
+
+                        <div id="formElements">
+
+                            <!--Name-->
+                            <label for="name">Name (required):</label>
+                            <input type="text" id="name" name="name" required>
+
+                            <!--Email-->
+                            <label for="email">Email (required):</label>
+                            <input type="email" id="email" name="email" required>
+
+                            <!--Phone-->
+                            <label for="phone">Phone (optional): </label>
+                            <input id="phone" name="phone" type="tel">
+                            <label for="phonetype">Phone Type (optional): </label>
+                                <select id="phonetype" name="phonetype">
+                                    <option value="" selected>Select Phone Type:</option>
+                                        <option value="Mobile">Mobile</option>
+                                        <option value="Work">Work</option>
+                                        <option value="Home">Home</option>
+                                </select>
+                            
+                            <!--Message Box-->
+                            <label for="message">Message (optional): </label>
+                            <textarea id="message" name="message"></textarea>
+
+                            <!--Reply Query-->
+                            <fieldset>
+                                <legend>Would you like a reply?</legend>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="message-yes" name="reply" checked>
+                                        Yes, please respond!
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="message-no" name="reply" checked>
+                                        No, thanks!
+                                    </li>
+                                </ul>
+                            </fieldset>
+
+                            <!--Submit-->
+                            <button type="submit">Send</button>
+
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
 
     </main>
     <footer>
