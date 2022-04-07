@@ -58,7 +58,6 @@ header{
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
-    grid-area: header;
 }
 
 #hero{
@@ -73,6 +72,7 @@ header{
 #bio{
     text-align: center;
     padding: 40px;
+    grid-area: bio;
 }
 
 #hobbies{
@@ -115,15 +115,19 @@ article p:nth-child(odd):first-letter{
     font-size: 30pt;
 }
 
-video{
+#video{
     grid-area: video;
     text-align: center;
+}
+
+#contact{
+    grid-area: contact;
 }
 
 footer{
     text-align: center;
     padding-top: 40px;
-    }
+}
 
 /*Desktop State*/
 @media screen and (min-width: 960px) { /* and (max-width:1080px){*/
@@ -136,7 +140,8 @@ footer{
                              "bio     bio"
                              "gallery gallery"
                              "article article"
-                             "video video";
+                             "video   video"
+                             "contact contact";
     }
 
     header{
