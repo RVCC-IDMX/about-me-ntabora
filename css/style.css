@@ -1,16 +1,16 @@
-*/* {
-    border:1px solid;
+
+#BOB{
+    display: flex ;
+
 }
-*/
 #BOB img{
 
-    width: 30px;
-    height: 30px;
-    ;
+    width: 300px;
+    height: 300px;
 }
 
 #BOB h1{
-    text-align: center;
+    text-align: left;
 }
 
 nav{
