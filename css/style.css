@@ -1,18 +1,20 @@
 
 #BOB{
     display: flex ;
-
+    align-items:center;
 }
 #BOB img{
 
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
 }
 
 #BOB h1{
-    text-align: left;
+    text-align: center;
+    margin-right: 200px;
+    width:100%;
+    font-size: 48px;
 }
-
 nav{
     text-align: center;
 }
@@ -22,12 +24,12 @@ ul{
 }
 
 li{
-    float: left;
+    display: inline-block;
 }
 
 li a {
     display: block;
-    color: black;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -62,6 +64,7 @@ header{
 
 #hero{
     text-align: center;
+    margin: 90px;
 }
 
 #hero img{
@@ -75,6 +78,10 @@ header{
     grid-area: bio;
 }
 
+#bio h2{ 
+    border-bottom: 1px solid;
+}
+
 #hobbies{
     background-color: #0388fc;
     background-image: linear-gradient(to bottom, #0388fc, lightblue);
@@ -82,12 +89,18 @@ header{
     text-align: center;
     box-shadow: 3px 3px 10px 5px #000;
     padding: 20px;
+    margin-top: 20px;   
 }
 
 #hobbies ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#hobbies h2 {
+    text-align: center;
+    border-bottom: 3px dotted;
 }
 
 #Gallery{
@@ -107,6 +120,9 @@ header{
 
 article{
     grid-area: article;
+}
+article h2 {
+    border-bottom: 1px solid; 
 }
 article p:nth-child(odd):first-letter{
     background-color: radial-gradient(#0388fc,lightblue);
@@ -131,6 +147,11 @@ footer{
 
 /*Desktop State*/
 @media screen and (min-width: 960px) { /* and (max-width:1080px){*/
+    body{
+        max-width: 1080px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     main {
         clear:both;
         display: grid;
@@ -176,3 +197,60 @@ footer{
         }
 
     }
+
+    @media screen and (max-width: 900px) {
+        #BOB img{
+
+            width: 50px;
+            height: 50px;
+        }
+        body{
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        main {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                                 "header" 
+                                 "hero"
+                                 "hobbies"
+                                 "bio"
+                                 "gallery"
+                                 "article"
+                                 "video"
+                                 "contact";
+        }
+    
+        header{
+            grid-area: header;
+            text-align: left;
+        }
+
+        #BOB h1{
+            font-size: 24px;
+        }
+    
+        #hero{
+            grid-area: hero;
+        }
+    
+        #bio{
+            grid-area: bio;
+        }
+    
+        figure{
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        #Gallery figcaption {
+            font-family: Montserrat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            margin-left: 1rem;
+            }
+    
+        }
