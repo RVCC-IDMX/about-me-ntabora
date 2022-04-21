@@ -6,11 +6,15 @@ _Nathaniel Tabora - IDMX 225 "About Me"_
 **Description**:
 ---
 
-A website building project designed to test user's ability to design, implement, and deploy a website using both HTML5 markup and CSS. Since modern wesbites primarily have resorted to reverting back to HTML and CSS for web animation and graphical elements, this implementation only focuses on those languages. 
+A website building project designed to test user's ability to design, implement, and deploy a website using both HTML5 markup and CSS. Since modern websites primarily have resorted to reverting back to HTML and CSS for web animation and graphical elements, this implementation only focuses on those languages. 
 
-The wesbite itself is based on classical sites that were designed in the 90's and early 2000's, with modern design and color motifs. The site is designed to be viewed easily on a 4:3 ratio monitor, while also being easy to use and read on the more common 16:9 widescreen. It is also designed to be useable on vintage HTML only rendering browsers, such as MOSIAC, WWW, and Netscape Navigator.
+The website itself is based on classical sites that were designed in the 90's and early 2000's, with modern design and color motifs. The site is designed to be viewed easily on a 4:3 ratio monitor, while also being easy to use and read on the more common 16:9 widescreen. It is also designed to be useable on vintage HTML/CSS rendering browsers, such as MOSIAC, WWW, and Netscape Navigator.
 
-Basic web elements, such as HTML/CSS animation, YouTube/HTML5 web player implementation, HTML web submission forms, Blogs, Photo Gallery, and sections, are all within the page. All elements implemented during the development of this webpage was learned during the Spring 2022 semesters at RVCC (Raritan Valley Community College).
+Basic web elements, such as HTML/CSS animation, YouTube/HTML5 web player implementation, HTML web submission forms, Blogs, Photo Gallery, and sections, are all within the page. 
+
+Other accessibility elements, such as Media States, Respsonsive Design, Flexbox-centric design and embedded media are all implemented and utilized in a manner that allows devices spanning a 30 year time frame to access.
+
+All elements implemented during the development of this webpage was learned during the Spring 2022 semesters at RVCC (Raritan Valley Community College).
 
 **Color Scheme**:
 ---
@@ -28,3 +32,13 @@ Colors utilized are:
 8. #FFF (White)
 
 ![Color Palette](img/palette.svg)
+
+**Citations**:
+---
+Credit as associated with the appopriate links (UNLESS OTHERWISE NOTED):
+
+* 
+
+**License**:
+---
+All code, images and files are open source and are allowed to be used without permissions as stated by author. However, all files/code/images are to be credited by user in appropriate fashion as deemed necessary. All questions should be directed to **natestab10@gmail.com**. 
