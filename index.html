@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Montserrat:ital,wght@1,100&family=PT+Serif&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 
@@ -28,6 +29,10 @@
             <img src = "img/svg/TTMacWhite.svg" alt="Tabora Technologies Mac">
             <div>
                 <h1>Tabora Technologies</h1>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
                 <nav id= "navigation" class="example"> 
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -40,7 +45,14 @@
             
         </section>
 
-
+    <!--
+        <nav class = "nav">
+            <input type="checkbox" id="nav_checkbox" class="nav_checkbox">
+            <label for="nav_checkbox" class="nav_toggle">
+                <svg class="menu" viewBox= "0 0 448 512" width="100" title="times"> </svg>
+            </label>
+        </nav>
+      -->
     </header>
 
     <!--Navigation Bar-->
