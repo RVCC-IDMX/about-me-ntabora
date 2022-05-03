@@ -196,6 +196,10 @@ footer{
         margin-left: 1rem;
         }
 
+    footer{
+        text-align: center;
+        padding-top: 40px;
+        }
     }
 
     @media screen and (max-width: 900px) {
@@ -239,7 +243,7 @@ footer{
         #bio{
             grid-area: bio;
         }
-    
+
         figure{
             display: grid;
             grid-template-columns: 2fr 1fr;
@@ -251,6 +255,5 @@ footer{
             align-items: center;
             font-size: 2rem;
             margin-left: 1rem;
-            }
     
         }
